@@ -5,10 +5,10 @@
 1.) make sure you are in you-re logged into your cluster account
 2.) type the following code:
 
-module load bio 
-module load megablast
+* module load bio 
+* module load megablast
 
-* To check the version use this:
+To check the version use this:
 
 blast* -version (* is either blastn, blastp, etc)
 
@@ -22,9 +22,9 @@ https://sunflowergenome.org/assembly-data/
 
 4.) Then you need to make a local blast database for each reference that you want to work with (except XRQ -- I don't see much point in going from v1 to XRQ or v2 to XRQ). Making a blast db is very easy. Here are the commands I used:
 
-makeblastdb -in v1/HA412.v1.1.bronze.20141015.fasta -dbtype nucl -out v1/v1db
+* makeblastdb -in v1/HA412.v1.1.bronze.20141015.fasta -dbtype nucl -out v1/v1db
 
-makeblastdb -in v2/Ha412HOv2.0-20181130.fasta -dbtype nucl -out v2/v2db
+* makeblastdb -in v2/Ha412HOv2.0-20181130.fasta -dbtype nucl -out v2/v2db
 
 ## Comparing unkown data
 
