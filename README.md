@@ -53,3 +53,24 @@ blastn \
 
 Congrats! You've just did blastn
 
+## Q: Can we use blast to call out those variant positions instead of scanning through all of them?
+Yes! We are going to annotate the genome with BLAST, and here is how:
+
+We will need: 
+* The pan genome
+* The reference genome
+
+1.) Follow previous steps above
+2.) Now, blast our genome sequence against the pan genome:
+
+blastx \
+   -db thedatabaseyoumade \
+   -query some_sequ_query.txt \
+   -evalue 0.1 \
+   -outfmt '6 qaccver qstart qend stitle' \
+   -out OL456172_blast.bed 
+
+You will see in the directory some outputs 
+
+Optional: download it and open it in IGB 
+
